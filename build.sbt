@@ -29,7 +29,7 @@ publishTo := Some(
          "JAnalyse Repository",
          "www.janalyse.fr",
          "/home/tomcat/webapps-janalyse/repository"
-     ) as("tomcat", new File(util.Properties.userHome+"/.ssh/id_rsa"))
+     ) as("tomcat", new File(System.getProperty("user.home")+"/.ssh/id_rsa"))
 )
 
 initialCommands in console := """
